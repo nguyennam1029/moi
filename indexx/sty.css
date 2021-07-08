@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mr-t {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+/* header  */
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 54px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    border-bottom: #ccc solid 1px;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+.nav-item_link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding:10px 20px;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.nav-item_link span {
+    font-size: 19px;
+    font-weight: 600;
+}
+.nav-item_link:hover {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+.img {
+    width: 100%;
+    position: relative;
+}
+.img img {
+    display: block;
+  width: 100%;
+  height: auto;
+
+}
+.img.img-text {
+    position: absolute;
+    
+}
+/* phần nav trên mobile và tablet */
+
+
+
+
+ /* @media (max-width:1023px)
+{
+    .nav__header-btn {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+
+    }
+    .nav_icon-mobile {
+        display: block;
+    }
+    .nav-mobile  {
+        /* display: block; */
+    /* }
+    .contac {
+        padding: 0 20px;
+    }
+} */ 
+/* phần Projects  */
+.body {
+    height: 500px;
+}
+.Projects-house {
+    background-color: blueviolet;
+}
+.Projects {
+
+}
+.heading-all {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 36px;
+}
+.Projects-item {
+    margin-top: 10px;
+    position: relative;
+}
+.Projects-text {
+    position: absolute;
+    top: 5px;
+    left: -6px;
+    padding: 5px 10px;
+    font-weight: 400;
+    color: #fff;
+    background-color: rgb(241, 154, 71);
+    border-top-right-radius: 3px;
+    /* border-top-left-radius: 3px; */
+    border-bottom-right-radius: 3px;
+
+}
+.Projects-text::before {
+    content: "";
+    position: absolute;
+    border-top: 5px solid rgb(241, 154, 71);
+    border-left: 5px solid transparent;
+    bottom: -5px;
+    left: 0;
+    filter: brightness(70%);
+}
+.Projects-img {
+    
+    width: 100%;
+}
+
+.shadow {
+    color: #fff;
+    height: 36px;
+    text-align: center;
+    width: 100px;
+    border-radius: 10px;
+    background: #d5b953;
+    box-shadow: inset 11px 11px 22px #b14545, inset -11px -11px 22px #f9d861;
+}
+/* About  */
+.About {
+ /* padding-bottom: 50px; */
+}
+.about-text {
+    line-height: 1.4;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+.about-architect {
+    position: relative;
+}
+.architect-img img {
+    width: 100%;
+}
+.architect-name {
+    font-size: 22px;
+    font-weight: 200;
+    margin: 10px 0;
+}
+.architect-work {
+    font-size: 17px;
+    color: #777;
+}
+.architect-info {
+    font-size: 17px;
+    color: #000;
+    margin: 10px 0;
+}
+.btn {
+    font-size: 17px;
+    color: #fff;
+    width: 100%;
+    height: 36px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgb(241, 154, 71);
+    cursor: pointer;
+}
+.btn:hover {
+    filter: brightness(90%);
+}
+/* .btn::before {
+    content: "";
+    position: absolute;
+    border-top: 25px solid rgb(241, 154, 71);
+    border-left: 25px solid transparent;
+    top: 0;
+    left: 0;
+    filter: brightness(70%);
+} */
+.architect {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #fff;
+    padding: 5px 8px;
+    background-color:rgb(241, 154, 71);
+} 
+.contact {
+    padding-bottom: 50px;
+}  
+.contac-heding {
+    font-size: 25px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.contact-text {
+    font-size: 17px;
+    margin-top: 16px;
+}
+.input-text {
+    font-size: 16px;
+    padding: 8px;
+    width: 100%;
+    margin-top: 18px;
+    
+}
+.contact-btn {
+    margin-top: 16px;
+    height: 40px;
+    width: 130px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    
+    background-color:rgb(245, 182, 122);
+}
+/* map  */
+.map {
+    padding-bottom: 20px;
+}
+.map img {
+    height: auto;
+    width: 100%;
+}
+/* footer */
+.footer {
+    height: 84px;
+    width: 100%;
+    background-color: black;
+}
+.license {
+    font-size: 17px;
+    color: #fff;
+    line-height: 84px;
+    text-align: center;
+}
+.license a {
+    color: #fff;
+}
+
+/* test  */
+.nav {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background-color: #333;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 48px;
+}
+
+.nav_bars-btn {
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    display: none;
+    margin-left: 10px;
+}
+.nav-overlay {
+    position: fixed;
+    z-index: 1;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: none;
+    animation: over linear 0.2s;
+}
+.nav__mobile {
+    
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 320px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-100%) ;
+    opacity: 0;
+    transition: transform linear 0.2s,opacity linear 0.2s;
+    
+    
+}
+.nav-mobile__list {
+    margin-top: 50px;
+    list-style: none;
+   
+    font-size: 1.3rem;
+}
+.nav-mobile__list li {
+    background-color:rgb(245, 182, 122) ;
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 3px;
+}
+.nav-mobile__link {
+    text-decoration: none;
+    color: #fff;
+}
+.nav__mobile-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+   color: #666;
+   
+}
+.nav-input {
+    display: none;
+}
+.nav-input:checked ~ .nav-overlay{
+    display: block;
+    cursor: pointer;
+}
+.nav-input:checked ~ .nav__mobile{
+   transform: translateX(0);
+   opacity: 1;
+}
+@keyframes over {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+ @media (max-width:1023px) {
+    .nav_bars-btn {
+        display: block;
+    }
+    .nav__pc {
+        display: none;
+    }
+    .nav-overlay {
+        /* display: block; */
+    }
+    .contac {
+        padding: 0 20px;
+    }
+    .about-architect {
+        text-align: center;
+    }
+}
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
